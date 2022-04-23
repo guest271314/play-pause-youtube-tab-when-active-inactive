@@ -1,0 +1,13 @@
+{
+  "name": "Play/Pause YouTube when tab is active/inactive",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["https://*.youtube.com/*"],
+  "permissions": ["tabs", "activeTab", "scripting"],
+  "action": {},
+  "author": "guest271314",
+  "homepage_url": "https://github.com/guest271314/play-pause-youtube-tab-when-active-inactive"
+}
