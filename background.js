@@ -34,7 +34,7 @@ chrome.tabs.onActivated.addListener(async (tab) => {
   if (currentTab && !currentTab.audible) {
     console.log(`YouTube video playing: ${(await executeScript(currentTab.id, 'play'))[0].result}`);
   } else {
-    [currentTab] = await await queryTab(false, true);
+    [currentTab] = await queryTab(false, true);
     if (currentTab) {
       console.log(`YouTube video playing: ${(await executeScript(currentTab.id, 'pause'))[0].result}`);
     }
